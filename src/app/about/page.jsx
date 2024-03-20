@@ -5,7 +5,7 @@ import React from 'react';
 const AboutPage = () => {
   return (
     <div className="max-w-7xl mx-auto p-3 sm:px-6 space-y-4">
-      <h1 className="text-2xl font-medium text-amber-600">About Us</h1>
+      <h1 className="text-2xl font-medium text-amber-600b">About Us</h1>
       <p className="mb-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut justo
         eget libero sodales congue. Sed et consectetur mauris. Proin euismod
