@@ -1,5 +1,4 @@
-import fetch from 'node-fetch'; // Make sure to import fetch
-
+import fetch from 'node-fetch'; 
 const API_KEY = process.env.API_KEY;
 
 export default async function Home(searchParams) {
@@ -14,12 +13,16 @@ export default async function Home(searchParams) {
 
   const res = await fetch(url);
 
+  console.log('Response Status:', res.status);
+
   if (!res.ok) {
-    throw new Error('Something went wrong');
+    const errorMessage = await res.text();
+    console.error('Error:', errorMessage);
+    
   }
 
-  const data = await res.json();
-  const results = data.results;
-  console.log(results);
+
+ 
+  
   return <div>Home</div>;
 }
